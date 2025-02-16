@@ -72,4 +72,27 @@ p {
   text-align: center;
   font-size: 18px;
   color: #777;
+
 }
+
+.container .btn-warning {
+  padding: 0.9 em;
+  background-color: #080808;
+  color: #faf9f9;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: auto;
+  display: block;
+  margin: 10px auto 0;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+  
+}
+
+.container .btn-warning:hover {
+  background-color: #23c415;
+}
+
+

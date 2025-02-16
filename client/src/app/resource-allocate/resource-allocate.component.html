@@ -35,7 +35,9 @@
     </div>
  
     <button type="submit" class="btn btn-primary mt-3" [disabled]="itemForm.invalid">Allocate</button>
-    <button class="btn btn-warning" routerLink="/dashboard">Back</button>
+
+    <button type="submit" class="btn-warning" routerLink="/dashboard">Dashboard</button>
+
   </form>
  
   <div *ngIf="showError" class="alert alert-danger mt-3">{{ errorMessage }}</div>

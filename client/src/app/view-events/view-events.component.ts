@@ -51,6 +51,11 @@ export class ViewEventsComponent implements OnInit {
         this.httpService.updateEvent(this.itemForm.value, this.currentEvent.id).subscribe(
           response => {
             this.message = 'Event updated successfully';
+
+            setTimeout(() => {
+              this.message = '';
+            }, 3000);
+
             // Refresh the events list after successful update
             this.fetchEvents();
             // Clear the form
