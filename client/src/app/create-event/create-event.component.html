@@ -28,7 +28,9 @@
    
     <button type="submit" class="btn btn-primary mt-3">Submit</button>
     <br>
-    <button class="btn btn-warning" routerLink="/dashboard">Back</button>
+
+    <button class="back-button" routerLink="/dashboard">Dashboard</button>
+
   </form>
  
   <div *ngIf="showError" class="alert alert-danger mt-3">{{ errorMessage }}</div>

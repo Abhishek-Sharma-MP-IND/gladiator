@@ -44,6 +44,11 @@ export class ResourceAllocateComponent implements OnInit{
             this.showError = true;
             // this.errorMessage = error.message;
             this.errorMessage = 'Error fetching events';
+
+            setTimeout(() => {
+              this.showError = false;
+            }, 3000);
+
           }
         );
       }
@@ -57,6 +62,11 @@ export class ResourceAllocateComponent implements OnInit{
             this.showError = true;
             // this.errorMessage = error.message;
             this.errorMessage = 'Error fetching Resources';
+
+            setTimeout(() => {
+              this.showError = false;
+            }, 3000);
+
           }
         );
       }
@@ -65,6 +75,11 @@ export class ResourceAllocateComponent implements OnInit{
         if (this.itemForm.invalid) {
           this.showError = true;
           this.errorMessage = 'All fields are required';
+
+          setTimeout(() => {
+            this.showError = false;
+          }, 3000);
+
           return;
         }
         this.httpService.allocateResources(
@@ -87,7 +102,11 @@ export class ResourceAllocateComponent implements OnInit{
  
       handleError(error: any) {
         this.showError = true;
-        this.errorMessage = error.error?.message || 'Something went wrong';
+        this.errorMessage = error.error?.message || 'Something went wrong'
+        setTimeout(() => {
+          this.showError = false;
+        }, 3000);;
+
       }
      
 }

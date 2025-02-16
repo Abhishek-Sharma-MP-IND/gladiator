@@ -51,14 +51,22 @@
        <img src="assets/edulogin.svg" alt="Login Illustration">
      </div>
      <div class="login-container">
+<<<<<<< HEAD
        <h1 style="color: rgb(50, 122, 255);">EduSync</h1>
+=======
+       <h1 style="color: rgb(50, 122, 255);" routerLink="/landing-page">EduSync</h1>
+>>>>>>> origin/shivraj
        <p id="mess" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #2b2b2b;">Please enter your username and password!</p>
        <form [formGroup]="itemForm" (ngSubmit)="onSubmit()">
          <div class="form-group">
            <label for="username">Username</label>
            <input id="username" formControlName="username" type="text" placeholder="Username"/>
            <div *ngIf="itemForm.controls['username'].invalid && itemForm.controls['username'].touched" class="error-message">
+<<<<<<< HEAD
              Username is required
+=======
+              Username is required
+>>>>>>> origin/shivraj
            </div>
          </div>
  
@@ -66,7 +74,8 @@
            <label for="password">Password</label>
            <input id="password" formControlName="password" type="password" placeholder="Password"/>
            <div *ngIf="itemForm.controls['password'].invalid && itemForm.controls['password'].touched" class="error-message">
-             Password is required
+               Password is required
+
            </div>
          </div>
  
@@ -78,6 +87,7 @@
        </form>
  
        <p style="color: #2b2b2b;">Don't have an account? <a routerLink="/registration" class="register-link">Register</a></p>
+]
      </div>
    </div>
  </body>

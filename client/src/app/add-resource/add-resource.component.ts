@@ -48,11 +48,22 @@ export class AddResourceComponent implements OnInit {
         (error) => {
           this.showError = true;
           this.errorMessage = 'An error occurred while adding the resource';
+<<<<<<< HEAD
+=======
+          setTimeout(() => {
+            this.showError = false;
+          }, 3000);
+>>>>>>> origin/shivraj
         }
       );
     } else {
       this.showError = true;
       this.errorMessage = 'Please fill in all required fields';
+
+      setTimeout(() => {
+        this.showError = false;
+      }, 3000);
+
     }
   }
 
@@ -64,6 +75,13 @@ export class AddResourceComponent implements OnInit {
       (error) => {
         this.showError = true;
         this.errorMessage = 'An error occurred while fetching the resources';
+<<<<<<< HEAD
+=======
+        setTimeout(() => {
+          this.showError = false;
+        }, 3000);
+        
+>>>>>>> origin/shivraj
       }
     );
   }

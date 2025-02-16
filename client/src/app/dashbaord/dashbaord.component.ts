@@ -169,7 +169,8 @@ fetchAllocatedResources(): void {
         this.responseMessage = "No Resource Allocated!";
         setTimeout(() => {
           this.showMessage = false;
-        }, 1000);
+
+        }, 2000);
       }
     },
     (error) => {

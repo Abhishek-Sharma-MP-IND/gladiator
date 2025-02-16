@@ -63,6 +63,11 @@ export class CreateEventComponent implements OnInit {
     } else {
       this.showError = true;
       this.errorMessage = 'Please fill in all required fields.';
+
+      setTimeout(() => {
+        this.showError = false;
+      }, 3000);
+
     }
   }
 }

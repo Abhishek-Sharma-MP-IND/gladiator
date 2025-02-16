@@ -63,3 +63,29 @@
   color: #007bb5;
   text-align: center;
 }
+
+
+.add-resource .btn-warning {
+  padding: 0.9 em;
+  background-color: #080808;
+  color: #faf9f9;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: auto;
+  display: block;
+  margin: 10px auto 0;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.add-resource .btn-warning:hover {
+  background-color: #c91414;
+}
+
+.add-resource .text-danger {
+  color: red;
+  font-size: 0.875em;
+}
+

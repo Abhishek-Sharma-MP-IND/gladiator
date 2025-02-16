@@ -2,7 +2,11 @@
 <app-nav ></app-nav>
 
 <div class="dashboard-container">
+<<<<<<< HEAD
   <h1><img src="assets/team/dashuser.png" alt="">Welcome {{username}}</h1>
+=======
+  <h2><img src="assets/team/dashuser.png" alt="">Welcome {{username}}</h2>
+>>>>>>> origin/shivraj
 <!-- <nav class="navbar"> -->
     <!-- <ul> 
       <ng-container *ngIf="role === 'student'">
@@ -77,7 +81,10 @@
           </tr>
         </tbody>
       </table>
+<<<<<<< HEAD
  
+=======
+>>>>>>> origin/shivraj
       <p *ngIf="showMessage">{{ responseMessage }}</p>
     </section> -->
   </ng-container>
@@ -140,7 +147,9 @@
             <td>{{ event.name }}</td>
             <td>{{ event.description }}</td>
             <td>{{ event.materials }}</td>
-            <td><button class="btn btn-warning" (click)="onDelete(event.id)">Delete</button></td>
+
+            <td><button class="btn-warning" (click)="onDelete(event.id)">Delete</button></td>
+
           </tr>
         </tbody>
       </table>

@@ -5,7 +5,9 @@
     <div>
       <label for="description">Description</label>
       <input id="description" formControlName="description" placeholder="Description">
-      <div *ngIf="itemForm.get('description')?.touched && itemForm.get('description')?.invalid">
+
+      <div *ngIf="itemForm.get('description')?.touched && itemForm.get('description')?.invalid" class="text-danger">
+
         Description is required.
       </div>
     </div>
@@ -13,7 +15,9 @@
     <div>
       <label for="resourceType">Resource Type</label>
       <input id="resourceType" formControlName="resourceType" placeholder="Resource type">
-      <div *ngIf="itemForm.get('resourceType')?.touched && itemForm.get('resourceType')?.invalid">
+
+      <div *ngIf="itemForm.get('resourceType')?.touched && itemForm.get('resourceType')?.invalid" class="text-danger" >
+
         Resource Type is required.
       </div>
     </div>
@@ -21,20 +25,24 @@
     <div>
       <label for="availability">Availability</label>
       <input id="availability" formControlName="availability" placeholder="Status">
-      <div *ngIf="itemForm.get('availability')?.touched && itemForm.get('availability')?.invalid">
+
+      <div *ngIf="itemForm.get('availability')?.touched && itemForm.get('availability')?.invalid" class="text-danger">
+
         Availability is required.
       </div>
     </div>
     
     <button type="submit">Add Resource</button>
-    <button class="btn btn-warning" routerLink="/dashboard">Back</button>
+
+    <button type="submit" class="btn-warning" routerLink="/dashboard">Dashboard</button>
   </form>
   
-  <div *ngIf="showError" class="error-message">
+  <div *ngIf="showError" class="alert alert-danger mt-3">
     {{ errorMessage }}
   </div>
   
-  <div *ngIf="showMessage" class="success-message">
+  <div *ngIf="showMessage" class="alert alert-success mt-3">
+
     {{ responseMessage }}
   </div>
   
